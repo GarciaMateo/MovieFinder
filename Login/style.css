@@ -10,10 +10,11 @@ body{
 }
 
 header{
-    margin
     top: 30px;
-    width: 1440;
-    position: relative;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    
 }
 h1{
     margin-bottom: 0px;
@@ -21,8 +22,9 @@ h1{
     color: #2791C2;;
     padding: 30px 0px;
     text-align: center;
-    font-size: 30px;
+    font-size: 36px;
     font-family: "Montserrat";
+    line-height: 32px;
 }
 .movie{
     text-transform: uppercase;
@@ -30,16 +32,17 @@ h1{
 }
 .finder{
     font-weight: 500;
+    letter-spacing:  1px;
 }
 
 .container{
-    margin: 16px auto 10% auto;
+    margin: 26px auto 10% auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 445px;
-    height: 570px;
+    max-width: 401px;
+    height: 550px;
     border-radius: 10px;
     opacity: .95;
     padding: 20px 44px;
@@ -47,8 +50,6 @@ h1{
     box-shadow: 0px 6px 6px rgba(11, 11, 11, 0.8);
     font-family: "Open Sans";
     color: #FFFFFF;
-
-
 
 }
 h2{
@@ -67,9 +68,10 @@ h2{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-bottom: 4%;
+    margin-bottom: 10px;
     margin-top: 12px;
     line-height: 21px;
+    height: 46px;
 
 }
 
@@ -85,6 +87,26 @@ h2{
     width: 85%;
     border: none;
 }
+
+.showPassword{
+    display: flex;
+    width: 18px;
+    height: 12px;
+    flex-wrap: wrap;
+
+}
+.outsideEye{
+    position: absolute;
+}
+.insideEye{
+    position: absolute;
+    z-index: 2;
+    width: 8px;
+    height: 8px;
+    margin: 2px 5px;
+}
+
+
 .form::placeholder{
     color: #BCBCBC;
     font-size: 13px;
@@ -201,14 +223,14 @@ button{
 }
 
 .container7{
-    margin:4% 0 4% 0;
+    margin:27px 0 4% 0;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .extLogin{
-    margin-top: 1%;
+    margin-bottom: 10px;
     height: 46px;
     width: 100%;
     border-radius: 30px;
@@ -225,24 +247,44 @@ button{
 
 }
 
-
-img{
-    width: 20px;
-}
 a{
     text-decoration: none;
 }
 
-
-
 .icon{
     background-color: transparent;
     padding:2px;
-    border: 2px solid black;
     border-radius: 5px;
+
+}
+
+.icon.fb{
+    width: 10px;
+    height: 20px;
+}
+
+.icon.tw {
+    width: 17px;
+    height: 15px;
+}
+
+.icon.G{
+    width: 28px;
+    height: 29px;
 }
 
 .iconBtn{
-    margin-right:5px;
+    display: flex;
+    margin-right:17px;
     margin-left: 25%;
+    width: 28px;
+    height: 29px;
+    border:2px solid #FFFFFF; 
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.iconBtn.G {
+    border: none;
+    margin-right: 19px;
 }
