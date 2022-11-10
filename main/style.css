@@ -1,0 +1,178 @@
+*{
+    font-family: sans-serif;
+    margin: 0px;
+    color: white;
+}
+
+body{
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(144, 139, 139, 1) 56%, rgba(0, 0, 0, 1) 100%);
+}
+
+header {
+    display: fixed;
+    align-items: center;
+    justify-content: center ;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(109, 158, 236);
+}
+nav{
+    margin: 0px auto ;
+    max-width: 1400px;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 5% 0px 5%;
+}
+.logo{
+    font-size: 20px;
+    display: inline-block;
+    cursor: default;
+}
+.movie{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.serach-bar{
+    width: 350px;
+    padding: 5px;
+    display: flex;
+    background-color: white;
+    align-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.lupa{
+    margin-right: 10px;
+    width: 20px;
+}
+.serach-input{
+    width: 300px;
+    border: none;
+    color: black;
+}
+.serach-input:focus{
+    outline: none;
+
+}
+
+.log-out{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.user-image{
+    margin-left: 10px;
+    background-color: white;
+    padding: 2px;
+    border-radius: 20px;
+    width: 25px;
+}
+.log-out-txt{
+    text-decoration: none;
+    font-size: 15px;
+}
+.container1{
+    margin: 0 auto;
+    display: flex;
+    max-width: 1440px;
+    height: 400px;
+    background-image: url(img/avatar.jpg);
+    flex-direction: column;
+    justify-content: center ;
+}
+.genere{
+    margin: 10px 0 10px 10%;
+}
+
+.title{
+    margin: 10px 0 10px 10%;
+
+}
+
+.description{
+    max-width: 600px;
+    margin-left: 10%;
+    line-height: 30px;
+}
+
+.watch-button{
+    margin-top: 30px;
+    margin-left: 10%;
+}
+
+button{
+    background-color: rgb(109, 158, 236);
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    width: 200px;
+}
+
+.container2{
+    max-width: 1440px;
+    height: 80px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+
+}
+
+.movies-display{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1440px;
+    margin-right: 10%;
+
+}
+
+.trhee-bars{
+    width: 42px;
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 5px;
+}
+
+.bar{
+    width: 10px;
+    height: 20px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.main-window{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    background-color: gray;
+    border-radius: 5px;
+    height: 28px;
+}
+
+.window{
+    width: 30px;
+    height: 15px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.mostWatched{
+    margin-left: 10%;
+}
+
+
