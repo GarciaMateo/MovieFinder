@@ -13,7 +13,6 @@ body{
     height: 100%;
     margin: 0;
     background-image:url(img/back\ 2.png);
-
 }
 
 header{
@@ -301,3 +300,21 @@ a{
     border: none;
     margin-right: 19px;
 }
+
+
+@media screen and (max-width: 834px) {
+   body{
+    justify-content: center;
+   }  
+}
+
+@media screen and (max-width: 640px) {
+    body{
+        margin: 0px;
+    }
+    .container{
+        width: 100%;
+        max-width: 492px;
+        height: 989px;
+    }
+ }
