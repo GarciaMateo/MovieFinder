@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="home/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -18,15 +18,17 @@
                 <div class="logo">
                     <span class="movie">movie</span><span class="finder"><i>finder</i></span>
                 </div>
-                <div class="serach-bar" >
-                    <img src="/img/lupa.png" alt="" class="lupa">
-                    <input type="serach" placeholder="Serach movies ..."  class="serach-input">
+                <div class="search-bar">
+                    <img src="home/img/lupa.png" alt="" class="lupa" >
+                    <form id="search-form">
+                        <input type="search" placeholder="search movies ..."  class="search-input" id="search">
+                    </form> 
                 </div>
                 <div class="log-out">
                     <a href="" class="log-out-txt">
                         Log out
                     </a>
-                    <img src="img/user.png" alt="" class="user-image">
+                    <img src="home/img/user.png" alt="" class="user-image">
                 </div>
             </nav>
         </header>
@@ -45,20 +47,42 @@
                 <button>Watch Now</button>
             </div>
         </div>
-        <div class="container2">
-            <div class="mostWatched">
+        <div class="container2" >
+            <div class="mostWatched" id="mostWatched">
                 <span>Most Watched Movies</span>
             </div>
             <div class="movies-display">
-                <div class="trhee-bars">
+                <button class="three-bars" id="btn3Bars">
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
-                </div>
-                <div class="main-window">
+                </button>
+                <button class="main-window" id="btnWindow">
                     <div class="window"></div>
-                </div>
+                </button>
             </div>
         </div>
+        <div class="movieContainer" id="movieContainer">
+            <div class="loadCard">
+                <div class="loadTxt"></div>
+                <div class="loadSubtxt"></div>
+                <div class="loadSubtxt"></div>
+                <div class="loadSubtxt"></div>
+            </div>
+            <div class="loadCard">
+                <div class="loadTxt"></div>
+                <div class="loadSubtxt"></div>
+                <div class="loadSubtxt"></div>
+                <div class="loadSubtxt"></div>
+            </div>
+            <div class="loadCard">
+                <div class="loadTxt"></div>
+                <div class="loadSubtxt"></div>
+                <div class="loadSubtxt"></div>
+                <div class="loadSubtxt"></div>
+            </div>
+        </div>
+        <script src="home/movieCard.js" type="module"></script>
+        <script src="home/search.js" type="module"></script>
     </body>
 </html>
