@@ -19,7 +19,7 @@ form.addEventListener('submit', (e) => {
         yourSearch.classList.add('mostWatched1');
 
         yourSearch.innerHTML = `
-                <span>Your search</span>
+                <span>Results for "${searchTerm}"</span>
             `
         //append all the elements to the html
         Container.appendChild(yourSearch);

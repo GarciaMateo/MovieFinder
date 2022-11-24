@@ -6,6 +6,7 @@
 
 body{
 background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgba(16, 16, 16, 1) 70%, rgba(30, 30, 30, 1) 100%);
+min-height: 1349px;
 }
 body::-webkit-scrollbar {
     width: 1em;
@@ -117,7 +118,7 @@ nav{
 .container1{
     margin: 0 auto;
     display: flex;
-    max-width: 1440px;
+    max-width: 1082px;
     height: 550px;
     background-image: url(img/avatar.jpg);
     flex-direction: column;
@@ -177,7 +178,7 @@ button{
     flex-direction: row;
     align-items: center;
     max-width: 1440px;
-    margin-right: 10%;
+    margin-right: 217px;
 
 }
 
@@ -220,7 +221,7 @@ button{
 }
 
 .mostWatched{
-    margin-left: 10%;
+    margin-left: 208px;
     width: 500px;
 }
 .mostWatched1 {
@@ -269,6 +270,8 @@ button{
 .movieCard{
     display: flex;
     position: relative;
+    width: 320px;
+    height: 439px;
     max-width: 320px;
     max-height: 439px;
     flex-direction: column;
