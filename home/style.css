@@ -295,10 +295,13 @@ button{
 }
 
 .movieTitle{
+    display: flex;
     position: absolute;
     top:56%;
+    height: 60px;
     margin-left: 5%;
     max-width: 90%;
+    align-items: flex-end;
 }
 
 .movieTitle h3{

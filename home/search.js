@@ -1,8 +1,9 @@
 import { BASE_URL, API_KEY, API_URL, getMovies } from "./movieCard.js";
+
 const SERACH_URL = BASE_URL + '/search/movie?' + API_KEY;
 const form = document.getElementById('search-form');
 const search = document.getElementById('search');
-const Container = document.getElementById('mostWatched')
+const Container = document.getElementById('mostWatched');
 
 form.addEventListener('submit', (e) => {
     // prevent default submition
@@ -36,6 +37,5 @@ form.addEventListener('submit', (e) => {
             `
         //append all the elements to the html
         Container.appendChild(yourSearch);
-
     }
 })
