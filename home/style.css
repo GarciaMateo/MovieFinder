@@ -115,37 +115,75 @@ nav{
     text-decoration: none;
     font-size: 12px;
 }
-.container1{
+.bannerContainer{
+    position: relative;
     margin: 0 auto;
     display: flex;
-    max-width: 1082px;
+    max-width: 1440px;
     height: 550px;
-    background-image: url(img/avatar.jpg);
     flex-direction: column;
     justify-content: center ;
-    padding: 0 179px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgba(255, 255, 255, 0) 100%);
 }
 
-h1{
+.bannerSubcontainer{
+    padding: 0 12.5%;
+}
+
+.bannerImg {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    justify-content: center;
+}
+
+.bannerImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.bannerRating{
+    position: absolute;
+    top: 35%;
+}
+.bannerRating span{
+    color: orange;
+}
+
+.bannerTitle{
+    display: flex;
+    position: absolute;
+    top: 40%;
+}
+
+.bannerTitle h1{
     font-size: 56px;
     font-weight: 700;
     line-height: 64px;
 }
-.genere >span{
+.bannerGenere span{
+    position: absolute;
+    top: 30%;
     color: #0FEFFD;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
 }
 
-.description{
+.bannerDescription{
+    position: absolute;
+    top: 55%;
     max-width: 605px;
     max-height: 127px;
     line-height: 30px;
 }
 
 .watch-button{
-    margin-top: 30px;
+    position: absolute;
+    top: 75%;
+
 }
 
 button{
@@ -161,7 +199,7 @@ button{
     cursor: pointer;
 }
 
-.container2{
+.displayContainer{
     max-width: 1440px;
     height: 80px;
     display: flex;
@@ -228,14 +266,16 @@ button{
     margin-left: 208px;
     width: 500px;
 }
-.mostWatched1 {
 
+.mostWatched span{
+    font-weight: 700;
+    font-size: 24px;
 }
 
 .movieContainer{
     display: flex;
     flex-wrap: wrap;
-    padding: 0 179px;
+    padding: 0 12.5%;
     max-width: 1082px;
     margin: 0 auto;
 }
@@ -297,26 +337,26 @@ button{
     display: flex;
     position: relative;
     width: 100%;
-    height: 439px;
-    max-height: 439px;
+    height: 440px;
+    max-height: 440px;
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgba(255, 255, 255, 0) 100%);
     cursor: pointer;
 
 }
 
 .movieImg{
-    display: flex;
-    position: relative;
     width: 100%;
-    height: 100%;
+    height: 99%;
     z-index: -1;
     justify-content: center;
 }
 .movieImg img{
-    width: 99.9%;
-    height: 99%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
 }
 
 .movieTitle{
@@ -336,7 +376,7 @@ button{
 
 .movieRating{
     position: absolute;
-    top: 70%;
+    top: 69%;
     margin-left: 5%;
     max-width: 90%;
 }

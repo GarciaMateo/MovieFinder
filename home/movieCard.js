@@ -6,14 +6,45 @@ const API_URL = BASE_URL + '/discover/movie?sort_by=popularity.desc&' + API_KEY;
 const IMG_URL = 'https://image.tmdb.org/t/p/w500';
 
 const movieContainer = document.getElementById('movieContainer')
+const bannerContainer = document.getElementById('bannerContainer')
 
 getMovies(API_URL)
 
 // This funtion gets the array whit 20 movies data from the db
 function getMovies(url) {
     fetch(url).then(res => res.json()).then(data => {
-        showMovies(data.results)
+        showMovies(data.results.slice(1, 20)) 
+        bannerMovie(data.results[0]); 
+        console.log(data.results)
     })
+}
+
+//This function creates the banner movie
+function bannerMovie(data) { 
+    bannerContainer.innerHTML = '';
+    var star = rating(Math.round(data.vote_average) / 2);
+    bannerContainer.innerHTML =`
+        <div class="bannerImg">
+            <img src ="${IMG_URL +data.poster_path}" alt ="${data.title}">
+        </div>
+        <div class="bannerSubcontainer">
+            <div class="bannerGenere">
+                <span>Genere</span>
+            </div>
+            <div class="bannerRating">
+                <span>${star}</span>
+            </div>
+            <div class="bannerTitle">
+            <h1>${data.title}</h1>
+            </div>
+            <div class="bannerDescription">
+                <p>${data.overview}</p>
+            </div>
+            <div class="watch-button">
+                <button>Watch Now</button>
+            </div>
+        </div>
+    `
 }
 
 // Create cards from every movie
@@ -29,18 +60,9 @@ function showMovies(data) {
         //create a calss for that div
         movieEl.classList.add('movieCard');
         movieEl.classList.add('grid');
-        // calculate the rating of the movie in a scale of one to five stars
-        let star ='' 
-        for (let i = 1; i <= (Math.round(vote_average) / 2); i++) {
-            star = star + '★';  
-        }
-        /* Half star
-        if ((Math.round(vote_average) % 2)) {
-            
-            star = star + '&#11240';
-        }
-        */
-        
+
+        var star = rating(Math.round(vote_average) / 2);
+
         movieEl.innerHTML = `
             <div class="movieImg">
                 <img src ="${IMG_URL+poster_path}" alt ="${title}">
@@ -62,4 +84,18 @@ function showMovies(data) {
 
 }
 
+// calculate the rating of the movie in a scale of one to five stars
+function rating(data) {
+    var star = '';
+    for (let i = 1; i <= (data); i++) {
+        star = star + '★';
+    }
+    /* Half star
+    if ((Math.round(vote_average) % 2)) {
+    
+    star = star + '&#11240';
+    }
+    */
+    return star
+}
 

@@ -3,7 +3,6 @@ const grid = document.getElementById('grid');
 const list = document.getElementById('list');
 
 
-
 function gridView(){
     var container = document.getElementById("movieContainer");
     var card = container.getElementsByClassName('movieCard');
