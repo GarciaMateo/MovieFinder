@@ -182,17 +182,17 @@ button{
 
 }
 
-.three-bars{
+.gridViewBtn{
     width: 42px;
     height: 28px;
     display: flex;
     flex-direction: row;
-    background-color: gray;
     border-radius: 5px;
     align-items: center;
     justify-content: space-evenly;
     margin-right: 5px;
     padding: 0;
+    background: none;
 }
 
 .bar{
@@ -202,15 +202,19 @@ button{
     border-radius: 3px;
 }
 
-.main-window{
+.listViewBtn{
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
-    background-color: gray;
     border-radius: 5px;
     height: 28px;
+    background: none;
+}
+
+.active{
+    background-color: #373737;
 }
 
 .window{
@@ -230,12 +234,20 @@ button{
 
 .movieContainer{
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
     flex-wrap: wrap;
     padding: 0 179px;
     max-width: 1082px;
     margin: 0 auto;
+}
+
+.movieContainer.grid {
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.movieContainer.list{
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .loadCard{
@@ -267,12 +279,25 @@ button{
     background-color: black;
 }
 
-.movieCard{
+.movieCard.grid{
     display: flex;
     position: relative;
     width: 320px;
     height: 439px;
     max-width: 320px;
+    max-height: 439px;
+    flex-direction: column;
+    margin-bottom: 40px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgba(255, 255, 255, 0) 100%);
+    cursor: pointer;
+
+}
+
+.movieCard.list{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 439px;
     max-height: 439px;
     flex-direction: column;
     margin-bottom: 40px;

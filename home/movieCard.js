@@ -28,7 +28,7 @@ function showMovies(data) {
         const movieEl = document.createElement('div');
         //create a calss for that div
         movieEl.classList.add('movieCard');
-        
+        movieEl.classList.add('grid');
         // calculate the rating of the movie in a scale of one to five stars
         let star ='' 
         for (let i = 1; i <= (Math.round(vote_average) / 2); i++) {

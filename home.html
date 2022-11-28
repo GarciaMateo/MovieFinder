@@ -52,17 +52,17 @@
                 <span>Most Watched Movies</span>
             </div>
             <div class="movies-display">
-                <button class="three-bars" id="btnBars">
+                <button class="gridViewBtn active" id="grid" onclick="gridView()">
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
                 </button>
-                <button class="main-window" id="btnWindow">
+                <button class="listViewBtn" id="list" onclick="listView()">
                     <div class="window"></div>
                 </button>
             </div>
         </div>
-        <div class="movieContainer" id="movieContainer">
+        <div class="movieContainer grid" id="movieContainer">
             <div class="loadCard">
                 <div class="loadTxt"></div>
                 <div class="loadSubtxt"></div>
