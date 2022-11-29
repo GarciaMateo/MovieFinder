@@ -27,6 +27,7 @@ form.addEventListener('submit', (e) => {
     }
     // if sumbit without text returns to the most watched movies
     else {
+        
         getMovies(API_URL)
         const yourSearch = document.createElement('div');
         //create a calss for that div
@@ -37,5 +38,6 @@ form.addEventListener('submit', (e) => {
             `
         //append all the elements to the html
         Container.appendChild(yourSearch);
+        
     }
 })
