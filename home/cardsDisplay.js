@@ -1,5 +1,7 @@
 
-function gridView(){
+const movieContainer = document.getElementById('movieContainer')
+
+function gridView() {
     var container = document.getElementById("movieContainer");
     var card = container.getElementsByClassName('movieCard');
     document.getElementById('grid').className = 'gridViewBtn active';
