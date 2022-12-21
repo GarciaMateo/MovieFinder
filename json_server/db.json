@@ -1,14 +1,14 @@
 {
-  "user": [
+    "users":[
     {
-      "email": "example@example.com",
-      "password": "Example1-",
-      "id": 1
+        "id":1,
+        "email": "example@example.com",
+        "password":"Exaple123_"
     },
     {
-      "email": "example2@example2.com.org.ar",
-      "password": "examplE2_",
-      "id": 2
+        "id":2,
+        "email": "example2@example.com",
+        "password":"Exaple123_"
     }
-  ]
+    ]
 }

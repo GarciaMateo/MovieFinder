@@ -1,17 +1,25 @@
+const url = 'http://localhost:3000/users';
 
-const url = 'http://localhost:3000/user';
-
-function userValidation(email, password) { 
-    const passwordForm = document.getElementById('password').value;
-    const emailForm = document.getElementById('email').value;
+const passwordForm = document.getElementById('password').value;
+const emailForm = document.getElementById('email').value;
+const loginBtn = document.getElementById('loginBtn')
 
 
+loginBtn.addEventListener('click',userValidation())
+
+async function userValidation(){
+    try{
+        const users = await fetch(url);
+        const usersData = await users.json();
+    
+        console.log(usersData);
+
+        usersData.forEach(element => {
+            console.log(element.email)
+            
+        });
+
+    }
+    catch{}
 }
 
-
-function login(url) {
-    fetch(url).then(res => res.json()).then(data => {
-        console.log(data);
-    })
-
-}
