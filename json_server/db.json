@@ -3,12 +3,12 @@
     {
         "id":1,
         "email": "example@example.com",
-        "password":"Exaple123_"
+        "password":"Example123-"
     },
     {
         "id":2,
         "email": "example2@example.com",
-        "password":"Exaple123_"
+        "password":"Example1234-"
     }
     ]
 }

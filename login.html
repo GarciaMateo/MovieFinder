@@ -30,9 +30,9 @@
                 </div>
                 <div class="forms">
                     <input type="password" class="form" placeholder="Password" id="password" autocomplete="off">
-                    <div class="showPassword">
+                    <div class="showPassword" id="showPassword">
                         <img src="Login/img/elipse3.svg" alt="" class="outsideEye">
-                        <img src="Login/img/elipse4.svg" alt="" class="insideEye">
+                        <img src="Login/img/elipse4.svg" alt="" class="insideEye" id="insideEye">
                     </div>
                 </div>
             </div>
@@ -49,6 +49,9 @@
                 <button id="loginBtn">
                     Log in
                 </button>
+                <div class="errorMsg">
+                    <span id="error"></span>
+                </div>
             </div>
             <div class="container5">
                 <span>Not registered yet?</span><a href=""><span>Register now</span></a>
