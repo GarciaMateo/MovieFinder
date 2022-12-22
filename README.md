@@ -10,3 +10,4 @@
 <li>password: Example123-</li>
 </ul>
 <p>If you want to enter with another user you need to add it to the db.json file that is on json_server folder.</p>
+<p>In order to test the app it is recommended to use vscode with the Live Server module. To initialize the login you must open the file login.html in your browser.</p>
