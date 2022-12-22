@@ -11,6 +11,7 @@ const listViewBtn = document.getElementById('list');
 const movieContainer = document.getElementById('movieContainer');
 const bannerContainer = document.getElementById('bannerContainer');
 
+getGenres()
 
 async function getMovies(url) {
     try {
@@ -152,7 +153,7 @@ function rating(data) {
     return star
 }
 
-getGenres()
+
 
 async function getGenres() {
     try {
@@ -176,6 +177,7 @@ function getGenreByid(genreId) {
 
     return genre.name
 }
+
 
 function ellipsify(text, maxLength) {
     if (text.length > maxLength) {
