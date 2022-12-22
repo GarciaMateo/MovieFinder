@@ -8,21 +8,21 @@
         <link rel="stylesheet" href="home/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,500&family=Open+Sans:wght@400;700&display=swap"
-            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,500&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body id="body">
         <header>
             <nav>
                 <div class="logo">
                     <span class="movie">movie</span><span class="finder"><i>finder</i></span>
                 </div>
                 <div class="search-bar">
-                    <img src="home/img/lupa.svg" alt="search icon" class="lupa" >
-                    <form id="search-form">
-                        <input type="search" placeholder="search movies ..."  class="search-input" id="search">
-                    </form> 
+                    <form id="searchForm" class="searchForm" autocomplete="off">
+                        <img src="home/img/lupa.svg" alt="search icon" class="lupa" >
+                        <input type="search" placeholder="search movies ..."  class="search-input" id="search" onkeyup="preSearchResults()">
+                    </form>
+                    <div class="preSearchContainer hidden" id="preSearchContainer">
+                    </div> 
                 </div>
                 <div class="log-out">
                     <a href="" class="log-out-txt">
@@ -69,8 +69,11 @@
                 <div class="loadSubtxt"></div>
             </div>
         </div>
+        <div class="modalMovieContainer" id="modalMovieContainer" style="visibility: hidden;" onclick="this.style.visibility='hidden';">
+        </div>
         <script src="home/movieCard.js" type="module"></script>
         <script src="home/search.js" type="module"></script>
         <script src="home/cardsDisplay.js"></script>
+        <script src="home/modalDisplay.js" type="module"></script>
     </body>
 </html>
