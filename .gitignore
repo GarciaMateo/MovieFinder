@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 node_modules
 package-lock.json
 package.json
 Login
+=======
+# ignore node_modules folder
+node_modules 
+package-lock.json
+package.json
+>>>>>>> loginFunctionality

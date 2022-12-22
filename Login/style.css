@@ -101,6 +101,7 @@ h2{
     width: 18px;
     height: 12px;
     flex-wrap: wrap;
+    cursor: pointer;
 
 }
 .outsideEye{
@@ -112,6 +113,7 @@ h2{
     width: 8px;
     height: 8px;
     margin: 2px 5px;
+    border-radius: 10px;
 }
 
 
@@ -177,6 +179,7 @@ h2{
 
 .container4{
     display: flex;
+    flex-direction: column;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -193,7 +196,18 @@ button{
     font-weight: 700;
     line-height: 20px;
     cursor: pointer;
+}
 
+.errorMsg{
+    width: 100%;
+    display: inline inline-block;
+    text-align: left;
+}
+
+.errorMsg span{
+    margin-left: 10%;
+    color: rgb(216, 65, 65);
+    font-weight: 700;
 }
 
 .container5{
