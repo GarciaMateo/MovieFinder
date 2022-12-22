@@ -7,7 +7,8 @@ import {
 } from "./movieCard.js";
 
 import {
-    searchMovieByid
+    searchMovieByid,
+    similarMovies
 } from "./modalDisplay.js";
 
 const SERACH_URL = BASE_URL + '/search/movie?' + API_KEY;
@@ -118,13 +119,3 @@ async function preSearchResults() {
 }
 
 
-async function similarMovies(movieId) {
-    try {
-        const url = `https://api.themoviedb.org/3/movie/${movieId}/similar?api_key=1cf50e6248dc270629e802686245c2c8&language=en-US&page=1`;
-        const res = await fetch(url);
-        const movie = await res.json();
-        const movieData = await movie.results
-        return movieData
-    }
-    catch (e) { console.log(e) }
-}

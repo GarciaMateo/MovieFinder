@@ -460,6 +460,7 @@ button{
     max-height: 20%;    
     margin-left: 5%;
     overflow: hidden;
+    text-align: justify;
 }
 
 .modalMovieContainer{
@@ -525,23 +526,37 @@ button{
     left: 8%;
     right: 8%;
     max-width: 90%;
+    text-align: justify;
 }
+
+.xbtn {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+   
+}
+
+.xbtn img{
+    width: 25px;
+}
+
 
 .infoContainer {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     position: absolute;
-    top: 70%;
+    top: 72%;
 
 }
 
 .info{
+    margin-left: 8%;
     display: flex;
     flex-direction: row;
     width: 50%;
-    justify-content: space-around;
+    justify-content: left;
 }
 
 .similarMovies{
@@ -551,8 +566,27 @@ button{
 .infoSubContainer{
     display: flex;
     flex-direction: column;
+    margin-right: 20%;
 }
 
 .infoAtt{
     margin-bottom: 20px;
+}
+
+.similarPosters{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: left;
+}
+
+.poster{
+    width: 100px;
+    margin-right: 2em;
+    cursor: pointer;
+}
+
+.genres{
+    color: #2791C2;
 }
