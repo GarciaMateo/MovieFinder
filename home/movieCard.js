@@ -12,14 +12,6 @@ const movieContainer = document.getElementById('movieContainer');
 const bannerContainer = document.getElementById('bannerContainer');
 
 
-<<<<<<< HEAD
-// This funtion gets the array whit 20 movies data from the db
-function getMovies(url) {
-    fetch(url).then(res => res.json()).then(data => {
-        showMovies(data.results.slice(1, 20)) 
-        bannerMovie(data.results[0]); 
-    })
-=======
 async function getMovies(url) {
     try {
         const res = await fetch(url)
@@ -28,7 +20,6 @@ async function getMovies(url) {
         return movieData
     }
     catch (e) { console.log(e) }
->>>>>>> searchFunctionality
 }
 
 
